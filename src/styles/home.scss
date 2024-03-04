@@ -1,0 +1,97 @@
+@import 'colors';
+
+.home1{
+    background-color: $second;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;    
+    >div{
+        margin-left: 10vw;
+        z-index: 10;
+        flex-direction: column;
+        align-items: center;
+        color: $first;
+        >h1{
+            text-transform: uppercase;
+            font: 900 5rem $text2;            
+        }
+        >p{
+            font: 700 2rem $text2;
+        }
+    }
+    &::before{
+        content: "";
+        background: no-repeat center url('../assets/bg1.jpg') ;
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        filter: blur(1px);
+    }
+}
+
+.home2{
+    background-color: $second;
+    height: 120vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    >.content{
+        background-color: $third;
+        border-radius: 0 200px 200px 0;
+        width: 80%;
+        height: 100vh;
+        align-items: center;
+        justify-content: space-around;
+        display: flex;
+        >img{
+            height:70vh;
+        }
+        >p{
+            font: 800 1.2rem $text2;
+            color: $first;
+        }
+    }
+}
+
+.home3{
+    background-color: $second;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    >div{
+        background-color: $third;
+        border-radius: 200px 0 0 200px;
+        width: 80%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        >h1{
+            font: 900 4rem $text2;
+        }
+        >article{
+            display: flex;
+            flex-wrap: wrap;            
+            >div{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                font-size: 6rem;
+                transition: all 0.3s ease-in;
+                >p{
+                    font-size: 1rem;
+                }
+                &:hover{
+                    filter: invert(1);
+                }
+            }
+        }
+    }
+}

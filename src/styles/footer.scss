@@ -1,0 +1,26 @@
+@import 'colors';
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    bottom: 0px;
+    background-color: $first;
+    gap: 5px;
+    >p{
+        font-weight: bold;
+    }
+    article{
+        font-size: 2rem;
+        text-decoration: none;
+        >a{
+            color: black;
+            &:hover{
+                color: $first;
+                color: rgb(61, 61, 68);
+            }
+        }
+
+    }
+}

@@ -1,0 +1,31 @@
+@import 'colors';
+
+nav{
+    background-color: $first;
+    height: 80px;
+    position: sticky;
+    top: 0px;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    opacity: 0.9;
+    >h1{
+        margin-left: 1vw;
+        text-transform: uppercase;
+        font: 900 2rem $text2;
+    }
+    >main{
+        width: 40%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        >a{
+            color: $second;
+            &:hover{
+                color: $third;
+            }
+        }
+    }
+}

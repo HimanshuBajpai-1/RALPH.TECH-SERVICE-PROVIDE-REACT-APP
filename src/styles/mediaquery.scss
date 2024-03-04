@@ -1,0 +1,139 @@
+@import 'colors';
+
+@media screen and (max-width:1200px) {
+    nav{
+        letter-spacing: 1px !important;
+        >main{
+            width: 60% !important;            
+        }
+    }
+
+    .home1{  
+        &::before{
+            filter: opacity(0.5);
+        }
+    }
+
+    .home2{    
+        >.content{
+            width: 100% !important;
+            flex-direction: column;
+            >img{
+                height:40vh !important;
+            }
+            >p{
+                font-size:2rem !important;
+                width: 80%;
+                text-align: center;
+            }
+        }
+    }
+
+    .home3{
+        >div{
+            >h1{
+                font: 900 4rem $text2;
+            }
+            >article{
+                gap: 5px;           
+                >div{
+                    font-size: 4rem !important;
+                    >p{
+                        font-size: 1rem;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+
+    .form{
+        min-height: 100vh !important;
+        gap: 20px !important;
+        >form{
+            gap: 20px !important;
+            color: $second;
+            width: 80% !important;
+            >input,button{
+                width: 50% !important;
+                height:50px !important;
+                font-size: 1.5rem !important;
+            }
+        }    
+    }
+}
+
+
+@media screen and (max-width:430px) {
+    nav{
+        height: 70px !important;
+        position: static;
+        >h1{
+            display: none;
+        }
+        >main{
+            width: 100% !important;
+        }
+    }
+
+    .home1{  
+        height: 90vh;
+        >div{
+            >h1{                
+                font: 900 3rem $text2;            
+            }
+            >p{
+                font: 700 1.3rem $text2;
+            }
+        }
+        &::before{
+            height: 90vh;
+            filter: opacity(0.3);
+        }
+    }
+
+    .home2{    
+        height: 100vh;
+        >.content{
+            width: 100% !important;
+            border-radius: 0 100px 100px 0;
+            flex-direction: column;
+            height: 80vh;
+            >img{
+                height:40vh !important;
+            }
+            >p{
+                text-align: center;
+                width: 80%;
+                font-size:1.4rem !important;
+            }
+        }
+    }
+
+    .home3{
+        >div{
+            width:100%;            
+            >h1{
+                color:white;
+                font: 900 3rem $text2;
+            }
+            >article{
+                gap: 5px;           
+                >div{
+                    font-size: 4rem !important;
+                    >p{
+                        font-size: 1rem;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+
+    .form{
+        min-height: 100vh !important;
+        >form{
+            width: 90% !important;
+        }    
+    }
+}
